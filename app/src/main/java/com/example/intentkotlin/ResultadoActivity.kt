@@ -39,7 +39,7 @@ class ResultadoActivity : AppCompatActivity() {
 
         userTextView.setText(user2)
         passTextView.setText(pass)
-
+        //Parcelable
         val usuario = Usuario("Caroline","Sanchez")
         val intent = Intent(this,ResultadoParcelableActivity::class.java)
         val bundle = Bundle()

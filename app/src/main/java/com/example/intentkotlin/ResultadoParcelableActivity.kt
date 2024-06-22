@@ -17,9 +17,12 @@ class ResultadoParcelableActivity : AppCompatActivity() {
 
         val usuario = bundle?.getParcelable<Usuario>("objeto-usuario")
 
-        val user = usuario.toString()
+        val user = usuario.toString()//recuperando el objeto
 
-        Toast.makeText(this,user,Toast.LENGTH_LONG).show()
+        val nombreUser = usuario?.nombre.toString();
+        val apellidoUser = usuario?.apellido.toString()
+
+        Toast.makeText(this,nombreUser+" "+apellidoUser,Toast.LENGTH_LONG).show()
 
 
 
